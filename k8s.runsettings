@@ -4,7 +4,7 @@
   <!-- Configurations that affect the Test Framework -->
   <RunConfiguration>
     <!-- Path relative to solution directory -->
-    <ResultsDirectory>/home/john/gits/ATPoc/SeleniumDriver</ResultsDirectory>
+    <ResultsDirectory>/tmp/testrunresults</ResultsDirectory>
     <!-- [x86] | x64    - You can also change it from menu Test, Test Settings, Default Processor Architecture -->
     <!-- Framework35 | [Framework40] | Framework45 -->
     <!-- Framework35 | [Framework40] | Framework45 -->
@@ -16,10 +16,10 @@
     <Parameter name="LogLevel" value="Debug" />
     <Parameter name="LogName" value="WebTest" />
     <Parameter name="BaseUrl" value="https://www.google.com" />
-    <Parameter name="DriverServerLocation" value="/home/john/gits/ATPoc/SeleniumDriver" />
+    <Parameter name="DriverServerLocation" value="." />
     <Parameter name="Timeout" value="10" />
-    <Parameter name="OutputFileDirectory" value="/home/john/gits/ATPoc/SeleniumDriver" />
-    <Parameter name="OutputFileScreenshotsDirectory" value="/home/john/gits/ATPoc/SeleniumDriver" />
+    <Parameter name="OutputFileDirectory" value="/tmp/testrunresults" />
+    <Parameter name="OutputFileScreenshotsDirectory" value="/tmp/testrunresults" />
     <Parameter name="LoginWaitTime" value="1" />
     <Parameter name="NavigateToBasePage" value="false" />
     <Parameter name="ForceKillProcess" value="false" />
@@ -30,8 +30,11 @@
     <Parameter name="EnableDetailedLogging" value="false" />
 
     <Parameter name="UseSeleniumGrid" value="true" />
-    <Parameter name="SeleniumGridUrl" value="http://localhost:31303/wd/hub" />
-    <Parameter name="CalculatorHomePageUrl" value="http://calculatorappsvc:8080" />
+    
+    <!-- <Parameter name="SeleniumGridUrl" value="http://selenium-router-deployment:4444/wd/hub" /> -->
+    <!-- <Parameter name="SeleniumGridUrl" value="http://selenium-router:4444/wd/hub" /> -->
+    <Parameter name="SeleniumGridUrl" value="http://moon.moon:4444/wd/hub" />
+    <Parameter name="CalculatorHomePageUrl" value="http://calculatorappsvc.default:8080" />
 
   </TestRunParameters>
   <!-- MSTest adapter -->
